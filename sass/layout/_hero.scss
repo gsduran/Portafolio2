@@ -1,0 +1,77 @@
+.caca {
+    background-position: center;
+    background-image: url('../img/bg-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+
+  }
+
+  .heroSec {
+    background-image: url('../img/bg-hero.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    height: 925px;
+    width: 100%;
+  }
+
+  .texto {
+    width: 600px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    /*    border: 1px solid #000;
+¨*/
+    padding: 100px;
+}
+
+.texto p{
+    color: black;
+
+}
+
+@media (max-width: 700px) {
+    .heroSec{
+        background-size: contain;
+        box-sizing: border-box;
+        position: relative;
+        padding-top: 200px;
+        height: 400px;
+
+    }
+    .textoGrande{
+        display: none;
+    }
+    .texto{
+        padding: 50px;
+        width: 500px;
+
+    }
+}
+
+@media (min-width: 700px) {
+
+    .textoChico{
+        display: none;
+    }
+}
+
+
+.grafico{
+    padding: 0 100px 0 100px;
+}
+
+
+.texto2 {
+    width: 600px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    /*    border: 1px solid #000;
+¨*/
+}
+
+.fondoFooter{
+    
+}
