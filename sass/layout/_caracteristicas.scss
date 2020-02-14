@@ -1,0 +1,64 @@
+.caracteristicas {
+  padding: 0 5%;
+  margin-bottom: 6%;
+
+  &__titulo {
+    text-align: center;
+    font-weight: $bold;
+    margin: 10% 0;
+
+    @include respond-to('medium') {
+      text-align: center;
+      @include relative-converter(font-size, rem, $xxx-large, 16);
+      font-weight: $bold;
+      margin: 0 0 5% 0;
+    }
+  }
+}
+
+.car-flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  &__item {
+    max-width: 500px;
+    margin-bottom: 15%;
+    @include respond-to('medium') {
+    margin-bottom: 0;
+
+    & svg:hover {
+      animation: darkend 4s ease-in;
+    }
+    }
+
+
+    h3 {
+      @include relative-converter(font-size, rem, $large, 16);
+      font-weight: $bold;
+
+      @include respond-to('medium') {
+        @include relative-converter(font-size, rem, $xx-large, 16);
+      }
+    }
+
+    p {
+      font-family: $alt-typo;
+    }
+  }
+}
+
+@keyframes darkend {
+  0% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}

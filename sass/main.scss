@@ -1,2 +1,10 @@
+@import 'vendors/node_modules/bootstrap/scss/bootstrap.scss';
+@import 'abstracts/variables';
 @import 'layout/hero';
-@import 'vendors/node_modules/bootstrap/scss/bootstrap.scss'
+@import 'layout/navbar';
+@import 'layout/hero';
+@import 'layout/caracteristicas';
+@import 'layout/precios';
+@import 'layout/footer';
+@import 'components/cards';
+@import 'components/buttons';
